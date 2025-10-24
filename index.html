@@ -1,24 +1,22 @@
-<!DOCTYPE html>
-<html lang="fr">
-
-<head>
+<html lang="fr"><head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Booki</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&amp;display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer">
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
+    
     <div class="main-container">
-        <header>
 
+        <header>
+            
             <img src="images/logo/Booki.png" alt="Logo Booki">
+            <span hidden><h1>Booki</h1></span>
 
 
             <nav>
@@ -27,20 +25,21 @@
                     <li><a href="#activites">Activités</a></li>
                 </ul>
             </nav>
-        </header>
-        <main>
-            <section>
+         </header>
 
-                <div>
-                    <h2>Trouver votre hébergement pour des vacances de rêve</h2>
-                    <p>En plein centre-ville ou en pleine nature</p>
+        <main>
+            
+            <section class="research">
+
+                <div class="research-title">
+                    <h2 class="section-title">Trouver votre hébergement pour des vacances de rêve</h2>
+                    <p class="section-subtitle">En plein centre-ville ou en pleine nature</p>
                 </div>
 
                 <div>
-                    <form class="rechercher" method="get" action="#">
+                    <form class="section-search" method="get" action="#">
                         <div class="search">
-                            <label for="localisation"> <i class="fa-solid fa-location-dot fa-s"
-                                    style="color: #000000;"></i></label>
+                            <label for="localisation"> <i class="fa-solid fa-location-dot fa-s" style="color: #000000;"></i></label>
                             <input type="text" id="localisation" name="localisation" placeholder="Marseille, France">
                             <button type="submit">Rechercher</button>
                         </div>
@@ -50,29 +49,28 @@
                 <div class="filtres">
                     <h3>Filtres</h3>
                     <ul>
-                        <li><button>Économique</button></li>
-                        <li><button>Familial</button></li>
-                        <li><button>Romantique</button></li>
-                        <li><button>Nos pépites</button></li>
+                        <li><button class="economique"><i class="fa-solid fa-money-bill-wave fa-lg" style="color: #0065fc;"></i>Économique</button></li>
+                        <li><button class="familial"><i class="fa-solid fa-person fa-lg" style="color: #0065fc;"></i>Familial</button></li>
+                        <li><button class="romantique"><i class="fa-solid fa-heart fa-lg" style="color: #0065fc;"></i>Romantique</button></li>
+                        <li><button class="pepites"><i class="fa-solid fa-fire fa-lg" style="color: #0065fc;"></i>Nos pépites</button></li>
                     </ul>
                 </div>
 
-                <div>
-                    <p> <i class="fa-regular fa-info fa-xs" style="color: #0065fc;"></i>
-                        Plus de 500 logements sont disponibles dans cette ville</p>
+                <div class="info">
+                  <p></p>  <span class="cercle"><i class="fa-solid fa-info fa-xs" style="color: #0065fc;"></i></span>
+                   Plus de 500 logements sont disponibles dans cette ville</p>
                 </div>
             </section>
 
             <div id="hebergements" class="hebergements-and-populaires">
                 <section class="hebergements">
-                    <div class="hebergements-tittle">
+                    <div class="hebergements-title">
                         <h2 class="section-title">Hébergements</h2>
                     </div>
                     <div class="hebergements-cards">
                         <a href="#">
-                            <artcile class="card">
-                                <img src="./images/hebergements/fred-kleber.jpg"
-                                    alt="Image de la chambre d'hôtel montrant un lit">
+                            <article class="card">
+                                <img src="./images/hebergements/fred-kleber.jpg" alt="Image de la chambre d'hôtel montrant un lit">
                                 <div class="card-content">
                                     <div class="card-txt">
                                         <h3 class="card-title">Hôtel du port</h3>
@@ -87,12 +85,11 @@
                                         <span class="sr-only">Note de 4 sur 5</span>
                                     </div>
                                 </div>
-                                </article>
-                        </a>
+                                
+                        </article></a>
                         <a href="#">
-                            <artcile class="card">
-                                <img src="./images/hebergements/febrian-zakaria.jpg"
-                                    alt="Image de la chambre d'hôtel montrant un lit">
+                            <article class="card">
+                                <img src="./images/hebergements/febrian-zakaria.jpg" alt="Image de la chambre d'hôtel montrant un lit">
                                 <div class="card-content">
                                     <div class="card-txt">
                                         <h3 class="card-title">Hôtel chez Amina</h3>
@@ -107,12 +104,11 @@
                                         <span class="sr-only">Note de 4 sur 5</span>
                                     </div>
                                 </div>
-                                </article>
-                        </a>
+                                
+                        </article></a>
                         <a href="#">
-                            <artcile class="card">
-                                <img src="./images/hebergements/reisetopia.jpg"
-                                    alt="Image de la chambre d'hôtel montrant un lit">
+                            <article class="card">
+                                <img src="./images/hebergements/reisetopia.jpg" alt="Image de la chambre d'hôtel montrant un lit">
                                 <div class="card-content">
                                     <div class="card-txt">
                                         <h3 class="card-title">Hôtel Les mouettes</h3>
@@ -127,12 +123,13 @@
                                         <span class="sr-only">Note de 4 sur 5</span>
                                     </div>
                                 </div>
-                                </article>
-                        </a>
+                               
+                        </article></a>
+                    </div>
+                        <div class="hebergements-cards">
                         <a href="#">
-                            <artcile class="card">
-                                <img src="./images/hebergements/annie-spratt.jpg"
-                                    alt="Image de la chambre d'hôtel montrant un lit">
+                            <article class="card">
+                                <img src="./images/hebergements/annie-spratt.jpg" alt="Image de la chambre d'hôtel montrant un lit">
                                 <div class="card-content">
                                     <div class="card-txt">
                                         <h3 class="card-title">Hôtel de la mer</h3>
@@ -147,12 +144,11 @@
                                         <span class="sr-only">Note de 4 sur 5</span>
                                     </div>
                                 </div>
-                                </article>
-                        </a>
+                                
+                        </article></a>
                         <a href="#">
-                            <artcile class="card">
-                                <img src="./images/hebergements/marcus-loke.jpg"
-                                    alt="Image de la chambre d'hôtel montrant un lit">
+                            <article class="card">
+                                <img src="./images/hebergements/marcus-loke.jpg" alt="Image de la chambre d'hôtel montrant un lit">
                                 <div class="card-content">
                                     <div class="card-txt">
                                         <h3 class="card-title">Auberge la Canebière</h3>
@@ -167,12 +163,11 @@
                                         <span class="sr-only">Note de 4 sur 5</span>
                                     </div>
                                 </div>
-                                </article>
-                        </a>
+                                
+                        </article></a>
                         <a href="#">
-                            <artcile class="card">
-                                <img src="./images/hebergements/nicate-lee.jpg"
-                                    alt="Image de la chambre d'hôtel montrant un lit">
+                            <article class="card">
+                                <img src="./images/hebergements/nicate-lee.jpg" alt="Image de la chambre d'hôtel montrant un lit">
                                 <div class="card-content">
                                     <div class="card-txt">
                                         <h3 class="card-title">Auberge Le Panier</h3>
@@ -187,11 +182,15 @@
                                         <span class="sr-only">Note de 4 sur 5</span>
                                     </div>
                                 </div>
-                                </article>
-                        </a>
+                                
+                        </article></a>
+                        </div> 
+                        <div class="afficher-plus">
+                           <p> <a href="#">Afficher plus</a> </p>
                     </div>
 
-                    <h3>Afficher plus</h3>
+                   
+                   
                 </section>
                 <section class="populaires">
                     <div class="populaires-title">
@@ -201,8 +200,7 @@
                     <div class="populaires-cards">
                         <a href="#">
                             <article class="card">
-                                <img src="./images/hebergements/emile-guillemot.jpg"
-                                    alt="Image de la chambre d'hôtel montrant un lit">
+                                <img src="./images/hebergements/emile-guillemot.jpg" alt="Image de la chambre d'hôtel montrant un lit">
                                 <div class="card-content">
                                     <div class="card-txt">
                                         <h3 class="card-title">Hôtel Le soleil du matin</h3>
@@ -221,8 +219,7 @@
                         </a>
                         <a href="#">
                             <article class="card">
-                                <img src="./images/hebergements/aw-creative.jpg"
-                                    alt="Image de la chambre d'hôtel montrant un lit">
+                                <img src="./images/hebergements/aw-creative.jpg" alt="Image de la chambre d'hôtel montrant un lit">
                                 <div class="card-content">
                                     <div class="card-txt">
                                         <h3 class="card-title">Chambres d’hôtes Au cœur de l’eau</h3>
@@ -241,8 +238,7 @@
                         </a>
                         <a href="#">
                             <article class="card">
-                                <img src="./images/hebergements/febrian-zakaria2.jpg"
-                                    alt="Image de la chambre d'hôtel montrant un lit">
+                                <img src="./images/hebergements/febrian-zakaria2.jpg" alt="Image de la chambre d'hôtel montrant un lit">
                                 <div class="card-content">
                                     <div class="card-txt">
                                         <h3 class="card-title">Hôtel Bleu et Blanc</h3>
@@ -263,30 +259,48 @@
                 </section>
             </div>
 
-            <section id="activites">
+            <section id="activites" class="activites">
+
+                <div class="activites-title">
                 <h2>Activités à Marseille</h2>
-                <div class="activities-container">
+            </div>
+
+                <div class="activites-card">
                     <a href="#">
-                        <article><img src="./images/activites/reno-laithienne.jpg" alt="Vieux-Port">
-                            <h3>Vieux-Port</h3>
+                        <article class="card">
+                            <img src="./images/activites/reno-laithienne.jpg" alt="Vieux-Port">
+                            
+                            <div class="card-content">
+                                <h3 class="card-title">Vieux-Port</h3>
+                            </div>
+                        
                         </article>
-                        <article><img src="./images/activites/paul-hermann.jpg" alt="Fort de Pomègues">
-                            <h3>Fort de Pomègues</h3>
+                        <article class="card">
+                            <img src="./images/activites/paul-hermann.jpg" alt="Fort de Pomègues">
+                            <div class="card-content">
+                                <h3 class="card-title">Fort de Pomègues</h3>
+                            </div>
                         </article>
-                        <article><img src="./images/activites/kilyan-sockalingum.jpg" alt="Parc national des Calanques">
-                            <h3>Parc national des Calanques</h3>
+                        <article class="card">
+                            <img src="./images/activites/kilyan-sockalingum.jpg" alt="Parc national des Calanques">
+                            <div class="card-content">
+                                <h3 class="card-title">Parc national des Calanques</h3>
+                            </div>
                         </article>
-                        <article><img src="./images/activites/florian-wehde.jpg" alt="Notre-Dame-de-la-Garde">
-                            <h3>Notre-Dame-de-la-Garde</h3>
+                        <article class="card">
+                            <img src="./images/activites/florian-wehde.jpg" alt="Notre-Dame-de-la-Garde">
+                            <div class="card-content">
+                                <h3 class="card-title">Notre-Dame-de-la-Garde</h3>
+                            </div>
                         </article>
                     </a>
-
-                </div>
+                    </div>
+                
             </section>
-
         </main>
 
         <footer>
+            
             <div class="footer-column">
                 <h3>À propos</h3>
                 <ul>
@@ -309,8 +323,9 @@
                     <li><a href="#">Nous contacter</a></li>
                 </ul>
             </div>
+       
         </footer>
-    </div>
-</body>
+        </div>
+    </body>
 
 </html>

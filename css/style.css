@@ -16,6 +16,10 @@
 body {
     display: flex;
     justify-content: center;
+    height: 1831px;
+    
+    
+    
 }
 
 .main-container {
@@ -23,6 +27,7 @@ body {
     max-width: 1440px;
     padding: 0 50px;
     box-sizing: border-box;
+    
 }
 
 /*******HEADER*******/
@@ -31,6 +36,7 @@ header {
   justify-content: space-between;
   align-items: center;
   height: 79px;
+  margin-bottom: 33px;
 }
 
 
@@ -49,7 +55,7 @@ nav a {
   text-decoration: none;
   color: rgba(0, 0, 0, 1);
   font-weight: 400;
-  padding: 30px 0;
+  padding: 30px 0px;
   border-top: 2px solid transparent;
   
 }
@@ -67,6 +73,29 @@ a {
 }
 
 /** SECTION RECHERCHE**/
+.research {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+    width: 1340px;;
+    height: 281px;
+    margin-bottom: 33px;
+}
+.research-title {
+    height: 53px;
+
+}
+
+.section-subtitle {
+    margin-top: 8px;
+}
+
+
+.section-search {
+    margin-bottom: 0px;
+height: 49px;
+}
+
 .search {
 border: 1px solid rgba(242, 242, 242, 1);
     display: flex;
@@ -75,7 +104,7 @@ border: 1px solid rgba(242, 242, 242, 1);
   color: rgba (255,255,255,1);
   overflow: hidden;
   width: 377px;
-  height: 49px;
+  height: 47px;
   gap:24px;
 }
 
@@ -99,7 +128,8 @@ border: 1px solid rgba(242, 242, 242, 1);
 .search input {
   border: none;
   font-weight: 700;
-  size: 18px;
+  font-size: 16px;
+  
   width: 147px;
   height: 21px;
 
@@ -107,28 +137,28 @@ border: 1px solid rgba(242, 242, 242, 1);
 
 input::placeholder{
   color: rgba(0, 0, 0, 1);
-  
 }
 
 .search button {
- background-color: #0065FC;
+ background-color: rgb(0, 101, 252);
   border: 1px solid #0065FC;
   color: white;
   font-weight: 700;
-  size: 18px;
+  font-size: 16px;
   border-top-right-radius: 15px;
   border-bottom-right-radius: 15px;
   padding: 15px 16px 15px 16px;
     gap: 10px;
     width: 132px;
-    height: 49px;
+    height: 47px;
 }
 
 .filtres {
   display: flex;
-  align-items: center;
+  align-items: stretch;
   flex-wrap: wrap;
   gap: 15px;
+  height: 50px;
 }
 
 .filtres h3 {
@@ -143,8 +173,29 @@ input::placeholder{
   display: flex;
   list-style: none;
   gap: 15px;
-  
+  padding-left: 0px;
+  margin: 0px;
 }
+  
+.filtres i {
+padding-right: 10px;
+}
+
+.economique {
+    width: 173px;
+}
+
+.familial {
+    width: 134px;
+}
+.romantique {
+    width: 170px;
+}
+
+.pepites {
+width: 167px;
+}
+
 
 .filtres button {
   border: 2px solid rgba(217, 217, 217, 1);
@@ -154,7 +205,6 @@ input::placeholder{
   font-weight: 700;
   gap: 10px;
   height: 50px;
-  width: 170px;
 
 }
 
@@ -164,6 +214,36 @@ input::placeholder{
   color: rgba(0, 0, 0,1);
 }
 
+.cercle {
+  display: inline-flex;            
+  align-items: center;
+  justify-content: center;
+  width: 24px;                     
+  height: 24px;
+  border: 1px solid rgba(217, 217, 217, 1);
+  border-radius: 50%;          
+    
+}
+.info i {
+    padding-top:7px;
+    width: 4px;width: 4px;
+    height: 10px;
+}
+
+.info {
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    gap:10px;
+    height: 24px;
+}
+.recherche p {
+    margin: 0px;
+}
+
+/************/
+
+
 .section-title {
     margin: 0;
     font-size: 22px;
@@ -172,14 +252,17 @@ input::placeholder{
 .card {
     background-color: white;
     border-radius: 20px;
-    padding: 5px;
+
     filter: drop-shadow(0px 3px 15px rgba(0, 0, 0, 0.1));
 }
 
 .card img {
     object-fit: cover;
-    width: 268px;
+    width: 250px;
     height: 124px;
+    border: 5px solid rgba(255, 255, 255, 1);
+    border-top-right-radius: 0px;
+    border-top-left-radius: 20px;
 }
 
 .card-title {
@@ -198,23 +281,87 @@ input::placeholder{
 .hebergements-and-populaires {
     display: flex;
     justify-content: space-between;
+    height: 614px;
+    padding-top: 20px;
 }
 
 .hebergements-and-populaires section {
     background-color: var(--main-bg-color);
-    border-radius: 20px;
+    border-radius: 15px;
     padding: 30px;
     box-sizing: border-box;
+    
 }
 
 /****** Hebergements ***********/
 .hebergements {
     width: 65%;
+
 }
 
+.hebergements-cards {
+    display:flex;
+    flex-wrap:wrap;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+.hebergements-cards .card {
+    display: flex;
+    flex-direction: column;
+    width:250px;
+    height:207px;
+    margin-top: 33px;
+   
+    
+    
+}
+.hebergements-cards img {
+    width: 237px;
+    height: 120px;  
+    border-top-right-radius: 20px;
+   
+}
+
+.hebergements-cards .card-content {
+    width: 220px;
+    height:64px;
+    padding-left: 15px;
+    padding-right: 15px;
+    gap:8px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    box-sizing: border-box;
+
+   
+}
+.hebergements-cards .card-title {
+    margin-top: 10px;
+    margin-bottom: 4px;
+    
+}
+
+.hebergements-cards .card-subtitle {
+    margin: 0;
+
+}
+
+.hebergements-cards .card-rating {
+    margin-bottom: 5px;
+}
+
+.afficher-plus {
+    font-weight: 700;
+    height: 21px;
+    margin-top: 33px;
+    
+    
+}
 /****** Populaires ***********/
 .populaires {
     width: 32%;
+    
 }
 
 .populaires-title {
@@ -242,6 +389,7 @@ input::placeholder{
     flex-direction: column;
     justify-content: space-between;
     box-sizing: border-box;
+
 }
 
 .populaires-cards .card-title {
@@ -256,6 +404,66 @@ input::placeholder{
 .populaires-cards .card-rating {
     margin-bottom: 5px;
 }
+/*******ACTIVITES*******/
+.activites {
+  width: 1280px;
+  height: 559px;
+  padding: 30px;
+  
+}
+  
+.activites-card {
+    height: 439px;
+    padding-top: 20px;
+  }
+.activites .card-title {
+    padding-left: 15px;
+}
+  
+.activites a {
+    display:flex;
+    align-items:center;
+    gap:30px;
+    width:1280px;
+}
+
+.activites img {
+    height:380px;
+    width:297px;
+    border:none; 
+    border-top-right-radius: 20px;
+}   
+
+
+/*******FOOTER*******/
+
+footer {
+    width: 1340px;
+    height: 163px;
+    background-color:#F2F2F2 ;
+    display: flex;
+    flex-direction: row;
+}
+
+footer ul {
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    gap: 15px;
+    list-style: none;
+    padding-left: 20px;
+}
+
+footer h3{
+    padding-right: 40px;
+    padding-left: 20px;
+}
+
+.footer-column {
+    width: 446px;
+    
+}
+
 
 
 
@@ -299,5 +507,5 @@ input::placeholder{
 
 /* Small devices (phones, less than 768px) */
 @media (max-width: 767.98px) {
-    /* ... */
+
 }
