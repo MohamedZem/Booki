@@ -360,6 +360,7 @@ header img {
 
 .section-footer {
     display: flex;
+    font-size: 18px;
     font-weight: 700;
     height: 21px;
     margin-top: 33px;
@@ -463,6 +464,10 @@ header img {
 
 .footer-column {
     width: 446px;
+}
+
+.footer-column h4 {
+    font-size: 18px;
 }
 
 footer ul {
@@ -792,6 +797,7 @@ footer ul {
 
 
     .main-footer {
+        padding: 10px 30px;
         flex-direction: column;
         min-width: 320px;
     }
