@@ -1,0 +1,14 @@
+{
+  "title": "Booki",
+  "description": "Site vitrine responsive développé en HTML et CSS à partir d'une maquette Figma. Ce projet met en œuvre les bonnes pratiques d'intégration web, l'utilisation de Flexbox, le responsive design et le respect des standards d'accessibilité.",
+  "technologies": [
+    "HTML5",
+    "CSS3",
+    "Flexbox",
+    "Responsive Design"
+  ],
+  "image": "assets/booki.png",
+  "demoUrl": "",
+  "featured": true,
+  "category": "Frontend"
+}
