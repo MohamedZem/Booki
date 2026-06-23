@@ -3,13 +3,53 @@
   "description": "Site vitrine responsive développé en HTML et CSS à partir d'une maquette Figma. Ce projet met en œuvre les bonnes pratiques d'intégration web, l'utilisation de Flexbox, le responsive design et le respect des standards d'accessibilité.",
   "technologies": [
     "HTML5",
-    "CSS3",
-    "Flexbox",
-    "Responsive Design"
+    "CSS3", 
+    "Responsive Design",
+    "Git"
   ],
   "image": "assets/booki.png",
+  "gallery": [
+    "assets/home.png",
+    "assets/hebergements.png",
+    "assets/activity.png"
+    
+  
+  ],
   "logo": "assets/logo.png",
+
   "demoUrl": "",
+
   "featured": true,
-  "category": "Frontend"
+
+  "category": "Frontend",
+
+  "context": "Premier projet de la formation OpenClassrooms consistant à intégrer une maquette Figma en HTML et CSS sans framework.",
+
+  "objectives": [
+    "Intégrer fidèlement une maquette.",
+    "Créer un site responsive.",
+    "Utiliser une structure HTML sémantique.",
+    "Respecter les bonnes pratiques d'intégration."
+  ],
+
+  "skills": [
+    "HTML5",
+    "CSS3",
+    "Flexbox",
+    "Responsive Design",
+    "Media Queries",
+    "Git"
+  ],
+
+  "results": [
+    "Site conforme à la maquette.",
+    "Affichage optimisé sur ordinateur, tablette et mobile.",
+    "Code structuré et maintenable."
+  ],
+
+  "improvements": [
+    "Migrer le CSS vers Sass.",
+    "Optimiser davantage les performances.",
+    "Ajouter des animations légères."
+  ]
 }
